@@ -1,0 +1,156 @@
+.back{
+    background-color:rgb(20, 45, 76);
+    color: antiquewhite;
+}
+
+#intro1{
+    color: #8ddc2d;
+}
+
+#intro2{
+    color: #fdfafa;
+}
+
+#intro3{
+    color:#96cdc7;
+}
+
+#intro4{
+    color:dimgrey
+}
+
+.project{
+    border-color: chocolate;
+    background-color: aquamarine; !important
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+.cards{
+    font-family: "Muli", sans-serif;
+    display: flex; /*Place the pictures in a row from a colum */
+    align-items: center;
+    justify-content: center; /* Placed items in the center*/
+    height: ; /* This acutally centered my pics in the middle of the page*/
+    overflow: hidden; /* nothing changed*/
+    margin: 0vh;
+    
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    padding: 5%;
+   
+}
+
+.panel{
+    background-size: cover; /* This made the pictures clearer*/
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    cursor: pointer; /* changes the mouse cursor */
+    flex: 0.5;
+    margin: 10px; /*Put space between the pictures */
+    position: relative;
+    -webkit-transition: all 700ms ease-in; /*Making the pictures slide in smooth */
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px; /* Moved my font to the bottom of the picture  */
+    left: 20px;
+    margin: 0;
+    opacity: 0; /* Made the font disappear */
+}
+
+.panel.active{
+    flex: 5; /*This made the picture wide*/
+}
+
+.panel.active h3{
+    opacity: 1; /*Brought the words back*/
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+
+#display {
+    position: absolute; /* Position the button absolutely */
+    bottom: 20px; /* Space from the bottom */
+    left: 20px; /* Space from the right */
+    height: 5vh;
+    padding: 1%;
+    margin-left: -1%;
+    transition: transform 0.3s;
+}
+
+#display:hover{
+    background-color: #8ddc2d; /* Color on hover */
+    color: aliceblue;
+}
+
+.panel:not(.active) #display {
+    display: none;
+}
+
+#card{
+    background-color: rgb(20, 45, 76);
+    padding-bottom: 50%;
+}
+
+.icon {
+    margin: 15px; /* Adjust the value as needed */
+    color: aliceblue;
+}
+
+.icon:hover {
+    color: #8ddc2d; /* Color on hover */
+}
+
+
+.navbar{
+    background-color: rgb(20, 45, 76);
+    color: #fdfafa;
+}
+
+.navbar a{
+    color: #8ddc2d;
+}
+
+
+
+.navbar a:hover{
+    color: #ffffff;
+}
+
+#about{
+    color: #8ddc2d;
+}
+
+#about:hover{
+    color: #ffffff;
+}
+
+.dropdown-menu{
+    color: cornflowerblue;
+}
+
+.dropdown-item{
+    color: darkgoldenrod;
+}
